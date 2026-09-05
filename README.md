@@ -7,7 +7,7 @@ A .Net lib that offers a lists of all the countries as per ISO-3166 in a handy l
 ## How To Use
 1. Download the package from Nuget.org (Package name: DreamersCode.Utilities.Lookups.Countries)
 2. The static class "CountryCollection" offers up a property "AllCountries" which allows you to enumerate through all the countries or filter using LINQ.
-    1. **.Net 8**: The list defaults to a FrozenSet that prioritises read speed for faster queries
+    1. **.Net 8 upwards**: The list defaults to a FrozenSet that prioritises read speed for faster queries
     2. **.Net Standard 2.0 & 2.1**: The list defaults to IReadOnlyList    
 
 # Example usage:
