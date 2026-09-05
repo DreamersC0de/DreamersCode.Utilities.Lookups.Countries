@@ -51,13 +51,13 @@ jobs:
         shell: bash
       
       - name: Restore dependencies
-        run: dotnet restore src/DreamersCode.PublicProjectTemplate.slnx
+        run: dotnet restore src/DreamersCode.Utilities.Lookups.Countries.slnx
       
       - name: Build solution
-        run: dotnet build src/DreamersCode.PublicProjectTemplate.slnx --configuration ${{ needs.determine-config.outputs.build_config }} --no-restore
+        run: dotnet build src/DreamersCode.Utilities.Lookups.Countries.slnx --configuration ${{ needs.determine-config.outputs.build_config }} --no-restore
       
       - name: Run tests
-        run: dotnet test src/DreamersCode.PublicProjectTemplate.slnx --configuration ${{ needs.determine-config.outputs.build_config }} --no-build --verbosity normal
+        run: dotnet test src/DreamersCode.Utilities.Lookups.Countries.slnx --configuration ${{ needs.determine-config.outputs.build_config }} --no-build --verbosity normal
 
   publish-nuget:
     needs: [build-and-test, determine-config]
@@ -99,10 +99,10 @@ jobs:
         shell: bash
       
       - name: Restore dependencies
-        run: dotnet restore src/DreamersCode.PublicProjectTemplate.slnx
+        run: dotnet restore src/DreamersCode.Utilities.Lookups.Countries.slnx
             
       - name: Pack NuGet package
-        run: dotnet pack src/DreamersCode.PublicProjectTemplate/DreamersCode.PublicProjectTemplate.csproj --configuration ${{ needs.determine-config.outputs.build_config }} --output ./nuget -p:Version=${{ steps.minver.outputs.version }} -p:MinVerSkip=true        
+        run: dotnet pack src/DreamersCode.Utilities.Lookups.Countries/DreamersCode.Utilities.Lookups.Countries.csproj --configuration ${{ needs.determine-config.outputs.build_config }} --output ./nuget -p:Version=${{ steps.minver.outputs.version }} -p:MinVerSkip=true        
       
       - name: Display NuGet package info
         run: |

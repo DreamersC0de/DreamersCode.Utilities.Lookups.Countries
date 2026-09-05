@@ -11,6 +11,6 @@
   <Folder Name="/GitHubWorkfFlows/">
     <File Path="../.github/workflows/ci-cd.yml" />
   </Folder>
-  <Project Path="DreamersCode.PublicProjectTemplate.Tests/DreamersCode.PublicProjectTemplate.Tests.csproj" Id="8c44a3f0-3678-4f12-a559-a0f7adc1333d" />
-  <Project Path="DreamersCode.PublicProjectTemplate/DreamersCode.PublicProjectTemplate.csproj" Id="eb436fb9-1665-47b4-94df-b87b7dc130c4" />
+  <Project Path="DreamersCode.Utilities.Lookups.Countries.Tests/DreamersCode.Utilities.Lookups.Countries.Tests.csproj" Id="8c44a3f0-3678-4f12-a559-a0f7adc1333d" />
+  <Project Path="DreamersCode.Utilities.Lookups.Countries/DreamersCode.Utilities.Lookups.Countries.csproj" Id="eb436fb9-1665-47b4-94df-b87b7dc130c4" />
 </Solution>

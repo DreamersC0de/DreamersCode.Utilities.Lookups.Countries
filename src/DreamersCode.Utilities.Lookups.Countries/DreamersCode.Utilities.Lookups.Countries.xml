@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DreamersCode.Utilities.Lookups.Countries</name>
+    </assembly>
+    <members>
+        <member name="T:DreamersCode.Utilities.Lookups.Countries.CountryCollection">
+            <summary>
+            Contains a list of all the countries against which queries can be made
+            </summary>
+        </member>
+        <member name="P:DreamersCode.Utilities.Lookups.Countries.CountryCollection.AllCountries">
+            <summary>
+            Represents the set of countries as per ISO-3166
+            </summary>
+        </member>
+        <member name="M:DreamersCode.Utilities.Lookups.Countries.CountryCollection.#cctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="T:DreamersCode.Utilities.Lookups.Countries.Models.DisplayInfo">
+            <summary>
+            Provides display information for the given language
+            </summary>
+        </member>
+        <member name="P:DreamersCode.Utilities.Lookups.Countries.Models.DisplayInfo.LanguageCode">
+            <summary>
+            The Three letter code representing language code (based on the ISO-639-2)
+            </summary>
+        </member>
+        <member name="P:DreamersCode.Utilities.Lookups.Countries.Models.DisplayInfo.DisplayValue">
+            <summary>
+            The way the record needs to be displayed for the given language
+            </summary>
+        </member>
+        <member name="M:DreamersCode.Utilities.Lookups.Countries.Models.DisplayInfo.#ctor(System.String,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="langCode">The Three letter code representing language code (based on the ISO-639-2)</param>
+            <param name="displayValue">The way the record needs to be displayed for the given language</param>
+        </member>
+        <member name="T:DreamersCode.Utilities.Lookups.Countries.Models.Country">
+            <summary>
+            Model representation of a country as per ISO 3166
+            </summary>
+        </member>
+        <member name="P:DreamersCode.Utilities.Lookups.Countries.Models.Country.TwoLetterCode">
+            <summary>
+            two-letter country codes which are the most widely used (ISO 3166-1 alpha-2 )
+            </summary>
+        </member>
+        <member name="P:DreamersCode.Utilities.Lookups.Countries.Models.Country.ThreeLetterCode">
+            <summary>
+            ISO 3166-1 alpha-3 – three-letter country codes which allow a better visual association between the codes and the country names
+            </summary>
+        </member>
+        <member name="P:DreamersCode.Utilities.Lookups.Countries.Models.Country.NumericCodeAsString">
+            <summary>
+            ISO 3166-1 numeric – three-digit country codes which are identical to those developed and maintained by the United Nations Statistics Division, 
+            with the advantage of script (writing system) independence, and hence useful for people or systems using non-Latin scripts
+            In this case, the numeric value is padded to adhere to the 3 digit standard
+            </summary>
+        </member>
+        <member name="P:DreamersCode.Utilities.Lookups.Countries.Models.Country.NumericCode">
+            <summary>
+            ISO 3166-1 numeric – three-digit country codes which are identical to those developed and maintained by the United Nations Statistics Division, 
+            with the advantage of script (writing system) independence, and hence useful for people or systems using non-Latin scripts.
+            </summary>
+        </member>
+        <member name="P:DreamersCode.Utilities.Lookups.Countries.Models.Country.CountryNames">
+            <summary>
+            The names of the language for a given language code.  English is always present, other languages might be missing
+            </summary>
+        </member>
+        <member name="M:DreamersCode.Utilities.Lookups.Countries.Models.Country.#ctor(System.Collections.Generic.List{DreamersCode.Utilities.Lookups.Countries.Models.DisplayInfo},System.String,System.String,System.Int16)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="countryNames"></param>
+            <param name="twoLetterCode"></param>
+            <param name="threeLetterCode"></param>
+            <param name="numericCode"></param>
+        </member>
+    </members>
+</doc>

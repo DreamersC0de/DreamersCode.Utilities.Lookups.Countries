@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
-    <RootNamespace>DreamersCode.PublicProjectTemplate.Tests</RootNamespace>
+    <TargetFrameworks>net10.0;net9.0;net8.0;</TargetFrameworks>
+    <RootNamespace>DreamersCode.Utilities.Lookups.Countries.Tests</RootNamespace>
     <LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DreamersCode.PublicProjectTemplate\DreamersCode.PublicProjectTemplate.csproj" />
+    <ProjectReference Include="..\DreamersCode.Utilities.Lookups.Countries\DreamersCode.Utilities.Lookups.Countries.csproj" />
   </ItemGroup>
 
 </Project>
