@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/General/">
+    <File Path="../.editorconfig" />
+    <File Path="../.gitattributes" />
+    <File Path="../.github/copilot-instructions.md" />
+    <File Path="../.gitignore" />
+    <File Path="../README.md" />
+    <File Path="global.json" />
+    <File Path="NuGet.config" />
+  </Folder>
+  <Folder Name="/GitHubWorkfFlows/">
+    <File Path="../.github/workflows/ci-cd.yml" />
+  </Folder>
+  <Project Path="DreamersCode.PublicProjectTemplate.Tests/DreamersCode.PublicProjectTemplate.Tests.csproj" Id="8c44a3f0-3678-4f12-a559-a0f7adc1333d" />
+  <Project Path="DreamersCode.PublicProjectTemplate/DreamersCode.PublicProjectTemplate.csproj" Id="eb436fb9-1665-47b4-94df-b87b7dc130c4" />
+</Solution>
