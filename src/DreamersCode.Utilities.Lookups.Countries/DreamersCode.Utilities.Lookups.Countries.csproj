@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net8.0;net9.0;net10.0;netstandard2.0;</TargetFrameworks>
+    <TargetFrameworks>net9.0;net10.0;net11.0;netstandard2.0;</TargetFrameworks>
     <RootNamespace>DreamersCode.Utilities.Lookups.Countries</RootNamespace>
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
@@ -28,7 +28,7 @@
   
   <ItemGroup>
     <None Include="icon_small.png" Pack="true" Visible="true" PackagePath="" />
-    <None Include="..\..\readme.md" Pack="true" PackagePath="\"/>
+    <None Include="..\..\readme.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
   <!-- AOT configuration -->
@@ -52,7 +52,7 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="MinVer" Version="7.0.0">
+    <PackageReference Include="MinVer" Version="8.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
