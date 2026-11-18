@@ -20,6 +20,10 @@ A .Net lib that offers a lists of all the countries as per ISO-3166 in a handy l
 ```
 
 # Release Notes
+Version 3.0.1 (Rel Date: 18/11/2026)
+- Added support for .Net 11
+- Dropped support for .Net 8 (now out of support)
+
 Version 3.0.0 (Rel Date: 05/09/2026)
 - Moved from Azure Devops to GitHub
 - Dropped support for .Net 4.62 (replaced with DN Standard 2.0)
